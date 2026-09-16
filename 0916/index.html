@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>資訊三乙 梁祖齊 九九乘法表</title>
+    <!-- CSS -->
+    <style>
+      /* 建立儲存格的樣式：粉紅色邊框 + 粉紅色填滿背景 */
+      td {
+          border: 1px solid pink;
+          background-color: pink; /* 框框裡面填滿粉紅色 */
+      }
+    </style>
+    <!-- JavaScript -->
+    <script>
+      /* 將乘法表中的每個元素都放置入儲存格 */
+      document.write("<table align='center'>");
+      for (let i = 0; i <= 9; i++) {
+          document.write("<tr>");
+          for (let j = 0; j <= i ; j++) {
+              document.write("<td>");
+              document.write(i + " * " + j + " = " + (i * j) + "&nbsp;&nbsp;&nbsp;");
+              document.write("</td>");
+          }
+          document.write("</tr>");
+      }
+      document.write("</table>");
+    </script>
+  </head>
+<h1>資訊三乙 梁祖齊 九九乘法表</h1>
+<body>
+
+</body>
+</html>
