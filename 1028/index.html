@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>資訊三乙 梁祖齊33050218</h1>
+
+<script>
+function light(sw) {
+  var bulb = document.getElementById("myImage");
+
+  if (sw == 0) {
+    bulb.src = "pic_bulboff.gif";
+    bulb.width = 100;
+    bulb.height = 180;
+  } 
+  else if (sw == 1) {
+    bulb.src = "pic_bulbon.gif";
+    bulb.width = 100;
+    bulb.height = 180;
+  }
+  else {
+    bulb.src = "pic_bulbon.gif";
+    bulb.width = 150;
+    bulb.height = 220;
+  }
+}
+</script>
+
+<img id="myImage"
+src="pic_bulboff.gif" width="100" height="180">
+
+<p>
+<button onclick="light(1)">開燈</button>
+<button onclick="light(0)">關燈</button>
+<button onclick="light(2)">超亮燈</button>
+</p>
+
+</body>
+</html>
